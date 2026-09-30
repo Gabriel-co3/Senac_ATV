@@ -1,0 +1,24 @@
+{
+  "name": "senac_atv",
+  "version": "1.0.0",
+  "description": "Repositório contendo exercécios das aulas",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-co3/Senac_ATV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Gabriel-co3/Senac_ATV/issues"
+  },
+  "homepage": "https://github.com/Gabriel-co3/Senac_ATV#readme",
+  "dependencies": {
+    "@inquirer/prompts": "^8.7.2"
+  }
+}
