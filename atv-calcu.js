@@ -11,7 +11,24 @@ const pagamento = await select({
     ]
 });
 
+let valor_descontado;
+
 switch (pagamento) {
-    case "10": 
-    console.log("Forma de pagamento Pix: R$ ")
-} 
+    default:
+        console.log("Opção inválida");
+        break;
+    case "10":
+        valor_descontado = valor * 0.9;
+        console.log("Valor de " + valor_descontado);
+        break;
+    case "5":
+        valor_descontado = valor * 0.95;
+        console.log("Valor de " + valor_descontado);
+        break;
+    case "0":
+        valor_descontado = valor;
+        console.log("Valor de " + valor_descontado);
+        break;
+}
+
+     

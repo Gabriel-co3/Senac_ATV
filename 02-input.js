@@ -38,6 +38,6 @@
 
 // import { input } from "@inquirer/prompts";
 
-// const nome = await input({ message: "Qual é a sua idade ?"});
+// const idade = await input({ message: "Qual é a sua idade ?"});
 
 // console.log("")
