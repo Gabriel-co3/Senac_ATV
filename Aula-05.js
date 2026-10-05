@@ -1,15 +1,15 @@
 
 
-// let contador = 1; // 1. Variável de controle (Inicio)
+let contador = 1; // 1. Variável de controle (Inicio)
 
-// while (contador <= 3) { // 2. Condição de Parada (teste)
-//     console.log(`Volta atual do loop ${contador}`);
-//     contador++; // 3. Modificação da Variável (passo)
-// }
+while (contador <= 3) { // 2. Condição de Parada (teste)
+    console.log(`Volta atual do loop ${contador}`);
+    contador++; // 3. Modificação da Variável (passo)
+}
 
-// console.log("🏁 Loop finalizado com sucesso!");
+console.log("🏁 Loop finalizado com sucesso!");
 
-// import { input } from '@inquirer/prompts'; 
+import { input } from '@inquirer/prompts'; 
 
 let senha = "";
 // Enquanto a senha digitada for diferente de "senac123":
