@@ -13,3 +13,22 @@ console.log(`Quantidade: ${qtd}`);
 console.log(`Subtotal: R$ ${subtotal.toFixed(2)}`);
 console.log(`Desconto: R$ ${desconto.toFixed(2)}`);
 console.log(`Total da venda: R$ ${total.toFixed(2)}`);
+
+
+         //  Estruturas de repetição
+let contador = 1;
+while (contador <= 5) {
+    console.log(`Numero: ${contador}`);
+    contador++;
+}
+
+let opcao;
+do {
+    console.log("1 - Cadastrar");
+    console.log("2 - Consultar");
+    opcao = 0; // aqui poderia vir do teclado 
+} while (opcao !== 0);
+
+for (let i = 1; i<= 5; i++) {
+    console.log(`contagem: $(i)`);
+}
