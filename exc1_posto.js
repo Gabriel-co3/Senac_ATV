@@ -7,7 +7,6 @@ const VOLTAS = 7;
 
 
 
-
 for (let i = 1; i <= VOLTAS; i++) {
     ListrosAbastecidos += PASSO;
     const total = ListrosAbastecidos * PREÇO_LITRO;
