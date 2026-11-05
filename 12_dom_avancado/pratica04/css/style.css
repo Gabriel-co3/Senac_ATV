@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* MENU */
+nav {
+    background-color: #1e3a8a;
+    padding: 20px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: 0 auto 80px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* CAMPO */
+#produto {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 52px;
+
+    margin: 0 auto 15px;
+    padding: 15px;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+
+    font-size: 16px;
+    background-color: white;
+    outline: none;
+}
+
+#produto:focus {
+    border-color: #2563eb;
+}
+
+/* MENSAGEM */
+.retorno {
+    display: block;
+    max-width: 450px;
+    margin: 0 auto 15px;
+    color: #dc2626;
+    font-size: 14px;
+    min-height: 17px;
+}
+
+/* BOTÃO */
+#adicionar {
+    display: block;
+    width: 150px;
+    height: 48px;
+
+    margin: 0 auto 30px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#adicionar:hover {
+    background-color: #1d4ed8;
+}
+
+/* LISTA */
+#lista {
+    max-width: 450px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#lista li {
+    background-color: white;
+
+    padding: 18px 20px;
+    margin-bottom: 12px;
+
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+
+    font-size: 16px;
+    color: #1e293b;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    nav {
+        margin-bottom: 50px;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #produto,
+    #lista {
+        width: 100%;
+    }
+}
