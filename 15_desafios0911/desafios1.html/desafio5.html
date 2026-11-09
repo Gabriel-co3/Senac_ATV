@@ -6,7 +6,7 @@
     <title>Desafio5</title>
 </head>
 <body id="body">
-    <h1>Desafio 5</h1>
+    <h1 id="titulo">Desafio 5</h1>
     <div id="caixa">Minha Caixa</div>
     <button id="alterar">Alterar Cor</button>
     <button id="alterar2">Alterar Cor2</button>
@@ -15,6 +15,7 @@
 
     <script>
         const caixa = document.querySelector('#caixa');
+        const titulo = document.querySelector('#titulo');
         const alterar = document.querySelector('#alterar');
         const alterar2 = document.querySelector('#alterar2');
         const alterar3 = document.querySelector('#alterar3');
@@ -27,7 +28,7 @@
             caixa.style.borderRadius = '10px';
             body.style.backgroundColor = 'white';
             caixa.style.textAlign = 'center';
-            
+            titulo.style.color = 'black';
         });
         alterar2.addEventListener('click', function () {
             caixa.style.backgroundColor = 'green';
@@ -36,6 +37,7 @@
             caixa.style.borderRadius = '10px';
             body.style.backgroundColor = 'blue';
             caixa.style.textAlign = 'center';
+            titulo.style.color = 'white';
         });
         alterar3.addEventListener('click', function () {
             caixa.style.backgroundColor = 'red';
