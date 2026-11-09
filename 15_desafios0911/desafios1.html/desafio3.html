@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio3</title>
+</head>
+<body>
+    <input id="nome" type="text">
+    <button id="validar">Validar</button>
+    <p id="mensagem"></p>
+    <script>
+        const nome = document.querySelector('#nome');
+        const mensagem = document.querySelector('#mensagem');
+
+        validar.addEventListener('click', function () {
+            if (nome.value.length < 3) {
+                mensagem.textContent = 'Nome inválido';
+            } else {
+                mensagem.textContent = 'Nome válido';
+            }
+            nome.value = '';
+            nome.focus();
+            setTimeout(() => {
+                mensagem.textContent = '';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

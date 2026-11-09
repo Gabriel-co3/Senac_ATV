@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio1</title>
+</head>
+
+<body>
+    <h1>Desafio 1</h1>
+    <input type="text" id="nome">
+    <button id="botao">Mostrar</button>
+    <div id="retorno"></div>
+    <script>
+        const campo= document.querySelector('#nome');
+        const retorno = document.querySelector('#retorno');
+
+        botao.addEventListener('click', function () {
+            retorno.innerHTML = `SALVE, ${nome.value}!`;
+        });
+    </script>
+</body >
+
+</html >

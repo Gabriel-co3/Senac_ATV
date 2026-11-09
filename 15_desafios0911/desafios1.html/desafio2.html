@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO2</title>
+</head>
+
+<body>
+    <h1>Desafio 2</h1>
+    <input type="number" id="valor1">
+    <input type="number" id="valor2">
+    <button id="botao">Somar</button>
+    <div id="retorno"></div>
+
+    <script>
+        const valor1 = document.querySelector('#valor1');
+        const valor2 = document.querySelector('#valor2');
+        const retorno = document.querySelector('#retorno');
+
+        botao.addEventListener('click', function () {
+            let soma = Number(valor1.value) + Number(valor2.value);
+            retorno.textContent = `A soma é: ${soma}`;
+            valor1.value = '';
+            valor2.value = '';
+        });
+    </script>
+</body>
+
+</html>

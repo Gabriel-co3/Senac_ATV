@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio4</title>
+</head>
+<body>
+    <button id="adicionar">Adicionar +100</button>
+    <button id="zerar">Zerar</button>
+    <h2 id="contador">0</h2>
+
+    <script>
+        const adicionar = document.querySelector('#adicionar');
+        const zerar = document.querySelector('#zerar');
+        const contador = document.querySelector('#contador');
+        adicionar.addEventListener('click', function () {
+            contador.textContent = Number(contador.textContent) + 100;
+        })
+        zerar.addEventListener('click', function () {
+            contador.textContent = 0;
+        })
+    </script>
+</body>
+</html>

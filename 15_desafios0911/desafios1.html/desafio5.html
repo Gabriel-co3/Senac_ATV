@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio5</title>
+</head>
+<body id="body">
+    <h1>Desafio 5</h1>
+    <div id="caixa">Minha Caixa</div>
+    <button id="alterar">Alterar Cor</button>
+    <button id="alterar2">Alterar Cor2</button>
+    <button id="alterar3">Alterar Cor3</button>
+    
+
+    <script>
+        const caixa = document.querySelector('#caixa');
+        const alterar = document.querySelector('#alterar');
+        const alterar2 = document.querySelector('#alterar2');
+        const alterar3 = document.querySelector('#alterar3');
+        const body = document.querySelector('#body');
+        
+        alterar.addEventListener('click', function () {
+            caixa.style.backgroundColor = 'blue';
+            caixa.style.color = 'black';
+            caixa.style.padding = '20px';
+            caixa.style.borderRadius = '10px';
+            body.style.backgroundColor = 'white';
+            caixa.style.textAlign = 'center';
+            
+        });
+        alterar2.addEventListener('click', function () {
+            caixa.style.backgroundColor = 'green';
+            caixa.style.color = 'black';
+            caixa.style.padding = '20px';
+            caixa.style.borderRadius = '10px';
+            body.style.backgroundColor = 'blue';
+            caixa.style.textAlign = 'center';
+        });
+        alterar3.addEventListener('click', function () {
+            caixa.style.backgroundColor = 'red';
+            caixa.style.color = 'black';
+            caixa.style.padding = '20px';
+            caixa.style.borderRadius = '10px';
+            body.style.backgroundColor = 'Gray';
+            caixa.style.textAlign = 'center';
+        });
+    </script>
+</body>
+</html>
