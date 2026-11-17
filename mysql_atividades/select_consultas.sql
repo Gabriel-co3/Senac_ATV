@@ -9,7 +9,8 @@ select * from alunos where cidade =  'Fortaleza' order by rg;
 
 select * from disciplinas order by carga_horaria asc limit 3;
 select * from professor order by nome asc limit 1;
-select * from alunos where data_nascimento like '%2000%;
+select * from alunos where datanascimento like '%2000%';
+select * from alunos where cidade like '%fortaleza%';
 INSERT INTO alunos (nome, datanascimento, rg, cpf, cidade) VALUES
 ('Ana Clara Silva', '1998-05-12', 'RG-FIC-0001', 'CPF-FIC-0001', 'Fortaleza'),
 ('João Pedro Santos', '1995-08-23', 'RG-FIC-0002', 'CPF-FIC-0002', 'São Paulo'),
