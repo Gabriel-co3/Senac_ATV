@@ -14,3 +14,11 @@ VALUES
 ('Mouse Logitech', '89.90', 1),
 ('Teclado Mecânico', '199.90', 1),
 ('Monitor Samsung', '1200.00', 1);
+
+INSERT INTO vendas_tb (id_cliente_vd, id_produto_vd, status_venda)
+VALUES
+(1, 1, 1),
+(1, 2, 1),
+(1, 3, 1),
+(2, 2, 1),
+(2, 4, 1);
