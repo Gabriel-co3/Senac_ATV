@@ -9,3 +9,4 @@ alter table turnos add column status int default "1";
 describe curso;
 
 alter table clientes add column status int default "1";
+alter table matricula_tb add column data_matricula timestamp default current_timestamp;

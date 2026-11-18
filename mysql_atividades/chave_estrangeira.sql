@@ -5,6 +5,7 @@ id_matricula int primary key auto_increment,
 id_aluno_mat  int not null,
 id_curso_mat  int not null,
 id_turnos_mat  int not null,
+data_matricula timestamp default current_timestamp,
 constraint fk_codigo_alunos
 foreign key (id_aluno_mat)
 references alunos (id_aluno),

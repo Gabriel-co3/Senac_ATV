@@ -1,4 +1,24 @@
 use loja_bd;
+use escola_bd;
+
+INSERT INTO matricula_tb
+(id_aluno_mat, id_curso_mat, id_turnos_mat)
+VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 1, 3),
+(4, 3, 1),
+(5, 2, 2);
+
+
+INSERT INTO curso (nome, status)
+VALUES
+('Informática', 1),
+('Administração', 1),
+('Desenvolvimento de Sistemas', 1),
+('Enfermagem', 1),
+('Contabilidade', 1);
+
 
 
 INSERT INTO clientes (nome, cpf, email, telefone, cidade)
